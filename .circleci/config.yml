@@ -43,4 +43,4 @@ jobs:
           key: v1-dependencies-{{ checksum "build.gradle" }}
 
       # run tests!
-      - run: ./gradlew unitTest -Dorg.gradle.jvmargs=-Xmx1036m --no-daemon
+      - run:  ./gradlew jar
