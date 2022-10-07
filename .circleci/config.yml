@@ -21,7 +21,7 @@ jobs:
 
     environment:
       # Customize the JVM maximum heap limit
-      JVM_OPTS: -Xmx3200m
+      JVM_OPTS: -Xmx1200m
       TERM: dumb
     # Add steps to the job
     # See: https://circleci.com/docs/2.0/configuration-reference/#steps
@@ -43,4 +43,4 @@ jobs:
           key: v1-dependencies-{{ checksum "build.gradle" }}
 
       # run tests!
-      - run: ./gradlew unitTest
+      - run: ./gradlew unitTest -Dorg.gradle.jvmargs=-Xmx1536m
