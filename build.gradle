@@ -413,7 +413,10 @@ subprojects {
       "**/WorkerSourceTaskTest.*", "**/AbstractWorkerSourceTaskTest.*", "**/ExactlyOnceWorkerSourceTaskTest.*",
       "**/WorkerTaskTest.*",
       // streams tests
-      "**/KafkaStreamsTest.*"
+      "**/KafkaStreamsTest.*",
+      "**/security.*",
+      
+      
     ])
   }
 
