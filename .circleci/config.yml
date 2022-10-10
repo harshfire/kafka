@@ -46,7 +46,7 @@ jobs:
           key: v1-dependencies-{{ checksum "build.gradle" }}
 
       # run tests!
-      - run:  ./gradlew :core:unitTest -PmaxParallelForks=1 -PmaxScalacThreads=1  --continue 
+      - run:  ./gradlew :streams:unitTest -PmaxParallelForks=1 -PmaxScalacThreads=1  --continue 
       - run:
           name: Save test results
           command: |
