@@ -45,7 +45,7 @@ jobs:
           key: v1-dependencies-{{ checksum "build.gradle" }}
 
       # run tests!
-      - run:  ./gradlew :stream:unitTest :core:unitTest :client:unitTest   --rerun-tasks --continue 
+      - run:  ./gradlew :stream:unitTest :storage:unitTest :raft:unitTest :core:unitTest :client:unitTest   --rerun-tasks --continue 
       - run:
           name: Save test results
           command: |
