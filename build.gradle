@@ -634,7 +634,7 @@ subprojects {
       "-language:postfixOps",
       "-language:implicitConversions",
       "-language:existentials",
-      "-Ybackend-parallelism", maxScalacThreads.toString(),
+      "-Ybackend-parallelism", "16",
       "-Xlint:constant",
       "-Xlint:delayedinit-select",
       "-Xlint:doc-detached",
