@@ -79,8 +79,7 @@ ext {
     )
 
   maxTestForks = 48
-  maxScalacThreads = project.hasProperty('maxScalacThreads') ? maxScalacThreads.toInteger() :
-      Math.min(Runtime.runtime.availableProcessors(), 8)
+  maxScalacThreads = 48
   userIgnoreFailures = project.hasProperty('ignoreFailures') ? ignoreFailures : false
 
   userMaxTestRetries = project.hasProperty('maxTestRetries') ? maxTestRetries.toInteger() : 0
