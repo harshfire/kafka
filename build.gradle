@@ -404,6 +404,7 @@ subprojects {
     testsToExclude.addAll([
       // connect tests
       "**/ConnectorPluginsResourceTest.*",
+      "**/RecordsIteratorTest.*",
       "**/ConnectorsResourceTest.*", "**/DistributedHerderTest.*", "**/FileOffsetBakingStoreTest.*",
       "**/ErrorHandlingTaskTest.*", "**/KafkaConfigBackingStoreTest.*", "**/KafkaOffsetBackingStoreTest.*",
       "**/KafkaBasedLogTest.*", "**/OffsetStorageWriterTest.*", "**/StandaloneHerderTest.*",
