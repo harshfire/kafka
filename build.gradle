@@ -57,7 +57,7 @@ ext {
   minJavaVersion = "8"
   buildVersionFileName = "kafka-version.properties"
 
-  defaultMaxHeapSize = "2g"
+  defaultMaxHeapSize = "7g"
   defaultJvmArgs = ["-Xss4m", "-XX:+UseParallelGC"]
 
   // "JEP 403: Strongly Encapsulate JDK Internals" causes some tests to fail when they try
