@@ -9,7 +9,7 @@ to `8` to ensure the generated binaries are compatible with Java 8 or higher (in
 used for compilation). Java 8 support has been deprecated since Apache Kafka 3.0 and will be removed in Apache
 Kafka 4.0 (see [KIP-750](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=181308223) for more details).
 
-Scala 2.12 and 2.13 are supported and 2.13 is used by default. Scala 2.12 support has been deprecated since
+Scala 2.12 and 2.13 are supported and1 2.13 is used by default. Scala 2.12 support has been deprecated since
 Apache Kafka 3.0 and will be removed in Apache Kafka 4.0 (see [KIP-751](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=181308218)
 for more details). See below for how to use a specific Scala version or all of the supported Scala versions.
 
