@@ -8,8 +8,6 @@
 name: Java CI with Gradle
 
 on:
-  push:
-    branches: [ "trunk" ]
   pull_request:
     branches: [ "trunk" ]
 
@@ -18,8 +16,11 @@ permissions:
 
 jobs:
   build:
+    strategy:
+      matrix:
+        runs-on: [self-hosted, ubuntu-latest]
 
-    runs-on: ubuntu-latest
+    runs-on: ${{matrix.runs-on}}
 
     steps:
     - uses: actions/checkout@v3
