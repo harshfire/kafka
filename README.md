@@ -13,7 +13,7 @@ Scala 2.12 and 2.13 are supported and 2.13 is used by default. Scala 2.12 suppor
 Apache Kafka 3.0 and will be removed in Apache Kafka 4.0 (see [KIP-751](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=181308218)
 for more details). See below for how to use a specific Scala version or all of the supported Scala versions.
 
-### Build a jar and run it ###
+### Build a jar and run it ###11
     ./gradlew jar
 
 Follow instructions in https://kafka.apache.org/quickstart
