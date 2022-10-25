@@ -28,7 +28,7 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - v1-dependencies-gradle1
+            - v1-dependencies-gradle222
       # Download and cache dependencies
 
       - run: gradle dependencies
@@ -46,4 +46,4 @@ jobs:
       - save_cache:
           paths:
             - ~/.gradle
-          key: v1-dependencies-gradle1
+          key: v1-dependencies-gradle222
