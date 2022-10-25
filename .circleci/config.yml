@@ -28,9 +28,7 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - v1-dependencies-gradle
-            # fallback to using the latest cache if no exact match is found
-            - v1-dependencies-
+            - v1-dependencies-gradle1
       # Download and cache dependencies
 
       - run: gradle dependencies
@@ -47,5 +45,5 @@ jobs:
           path: ~/test-results  
       - save_cache:
           paths:
-            - .gradle
-          key: v1-dependencies-gradle
+            - cd ../../root/.gradle
+          key: v1-dependencies-gradle1
