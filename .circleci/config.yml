@@ -45,5 +45,5 @@ jobs:
           path: ~/test-results  
       - save_cache:
           paths:
-            - cd ../../root/.gradle
+            - ~/.gradle
           key: v1-dependencies-gradle1
