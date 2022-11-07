@@ -1,0 +1,33 @@
+version: 1
+name: MatrixWithSimplifiedYaml
+stages:
+  - type: Custom
+    name: custom_stage_name
+    spec:
+      strategy:
+        matrix: 
+          service: ["Service1","Service2"]
+      steps:
+        - type: Http
+          spec:
+            strategy:
+              matrix:
+                a: ["a","b","c"]
+                maxConcurrency: 2
+            method: GET
+            url: http://www.google.com
+        - type: ShellScript
+          spec:
+            strategy:
+              repeat:
+                times: 3
+                maxConcurrency: 2
+            shell: Bash
+            onDelegate: true
+            source:
+                type: Inline
+                spec:
+                    script: echo Hi
+                    environmentVariables: []
+                    outputVariables: []
+            timeout: 10m
