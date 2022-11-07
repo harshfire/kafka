@@ -264,7 +264,7 @@ default. See https://www.lightbend.com/blog/scala-inliner-optimizer for more det
 
 The gradle [dependency debugging documentation](https://docs.gradle.org/current/userguide/viewing_debugging_dependencies.html) mentions using the `dependencies` or `dependencyInsight` tasks to debug dependencies for the root project or individual subprojects.
 
-Alternatively, use the `allDeps` or `allDepInsight` tasks for recursively iterating through all subprojects:
+Alternatively, use the `allDeps` or or `allDepInsight` tasks for recursively iterating through all subprojects:
 
     ./gradlew allDeps
 
