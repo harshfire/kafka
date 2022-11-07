@@ -4,6 +4,8 @@ stages:
   - name: Build and test Java app
     type: ci
     spec:
+      strategy:
+         parallelism: 3
       clone:
         disabled: false
       steps:
