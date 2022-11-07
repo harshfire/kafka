@@ -22,5 +22,3 @@ stages:
               type: JUnit
               paths:
                 - "**/*.xml"
-            strategy:
-              parallelism: 3
