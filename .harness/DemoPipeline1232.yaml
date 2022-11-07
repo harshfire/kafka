@@ -18,7 +18,6 @@ stages:
             language: Java
             build_tool: Gradle
             build_args: unitTest -PignoreFailures=true
-            preCommand: ls
             test_reports:
               type: JUnit
               paths:
