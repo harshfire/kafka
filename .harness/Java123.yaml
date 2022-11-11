@@ -1,0 +1,21 @@
+name: Java with Gradle_1668185984403
+version: 1
+stages:
+  - name: Build and test Java app
+    type: ci
+    spec:
+      steps:
+        - name: Build
+          type: script
+          spec:
+            run: |-
+              echo "Welcome to Harness CI"
+              gradle build -x test
+        - name: Run Tests
+          type: run_tests
+          spec:
+            language: Java
+            build_tool: Gradle
+            build_args: test
+            strategy:
+              parallelism: 3
