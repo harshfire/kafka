@@ -9,7 +9,7 @@ stages:
           type: script
           spec:
             run: |-
-              echo "Welcome to Harness CI"
+              echo "Welcome to Harness CI2"
               gradle build -x test
         - name: Run Tests
           type: run_tests
