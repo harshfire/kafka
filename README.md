@@ -72,6 +72,7 @@ Generate coverage for a single module, i.e.:
 
     ./gradlew clients:reportCoverage -PenableTestCoverage=true -Dorg.gradle.parallel=false
     
+### hjdhjfd
 ### Building a binary release gzipped tar ball ###
     ./gradlew clean releaseTarGz
 
