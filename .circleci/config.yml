@@ -11,6 +11,7 @@ jobs:
     machine:
       image: ubuntu-2004:current
     resource_class: large
+    parallelism: 3
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
       # documented at https://circleci.com/docs/2.0/circleci-images/
@@ -26,7 +27,9 @@ jobs:
     # See: https://circleci.com/docs/2.0/configuration-reference/#steps
     steps:
       - checkout
-
+      - restore_cache:
+          keys:
+            - v1-dependencies-gradle222
       # Download and cache dependencies
 
       - run: gradle dependencies
@@ -40,4 +43,8 @@ jobs:
             find . -type f -regex ".*/build/test-results/.*xml" -exec cp {} ~/test-results/junit/ \;
           when: always      
       - store_test_results:
-          path: ~/test-results      
+          path: ~/test-results  
+      - save_cache:
+          paths:
+            - ~/.gradle
+          key: v1-dependencies-gradle222
