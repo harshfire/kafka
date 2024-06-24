@@ -18,7 +18,7 @@ for more details). See below for how to use a specific Scala version or all of t
 
 Follow instructions in https://kafka.apache.org/quickstart
 
-### Build source jar ###
+### Build source jar ####
     ./gradlew srcJar
 
 ### Build aggregated javadoc ###
